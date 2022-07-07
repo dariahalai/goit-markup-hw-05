@@ -43,7 +43,7 @@
              <section class="section hero">
                 <div class="container"></div>
                     <h1 class="main-title">Эффективные решения для вашего бизнеса</h1>
-                    <button type="button" class="main btn">Заказать услугу</button>
+                    <button type="button" class="main btn" data-modal-open>Заказать услугу</button>
                  </div>     
             </section> 
                      
@@ -96,9 +96,21 @@
             <div class="container">
                 <h2 class="title work">Чем мы занимаемся</h2>
                 <ul class="work-list">
-                    <li class="item"><img src="./images/Студия/box_1.jpg" alt="Веб-программирование" width="370" height="294"></li>
-                    <li class="item"><img src="./images/Студия/box_2.jpg" alt="Мобильное программирование" width="370" height="294"></li>
-                    <li class="item"><img src="./images/Студия/box_3.jpg" alt="Веб-дизайн" width="370" height="294"></li>
+                    <li class="item work"><img src="./images/Студия/box_1.jpg" alt="Веб-программирование" width="370" height="294">
+                        <div class="overlay">
+                            <span class="text-overlay">Десктопные приложения</span>
+                        </div>
+                    </li>
+                    <li class="item work"><img src="./images/Студия/box_2.jpg" alt="Мобильное программирование" width="370" height="294">
+                        <div class="overlay">
+                            <span class="text-overlay">Мобильные приложения</span>
+                        </div>
+                    </li>
+                    <li class="item work"><img src="./images/Студия/box_3.jpg" alt="Веб-дизайн" width="370" height="294">
+                        <div class="overlay">
+                            <span class="text-overlay">Дизайнерские решения</span>
+                        </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -347,5 +359,18 @@
         </div>
         </div>
     </footer>
+
+    <div class="backdrop is-hidden" data-modal >
+        <div class="modal" >
+           <button class="btn-icon-close" data-modal-close >
+            <svg class="icon-close" width="18" height="18">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+           </button>
+        </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
+
 </body>
 </html>
